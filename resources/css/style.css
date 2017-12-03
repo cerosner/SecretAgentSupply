@@ -1,0 +1,218 @@
+html, body {
+  font-size: 18px;
+  font-family: Helvetica, sans-serif;
+  color: white;
+}
+
+.logo {
+  background-color: black;
+}
+
+.logo .container {
+  align-items: center;
+  padding: 0.66rem 0.5rem;
+}
+
+.container {
+  display: flex;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.logo img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+.logo span {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: Helvetica;
+}
+
+.banner {
+  background-image: url('../images/banner.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 25rem;
+}
+
+.headline {
+  position: relative;
+  top: 9rem;
+  padding: 2rem 3rem;
+  width: 20rem;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  font-family: Helvetica;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.headline p {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.headline h1 {
+  font-size: 2rem;
+}
+
+.navigation {
+  background-color: firebrick;
+}
+
+nav.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  font-family: Helvetica;
+}
+
+#menu {
+  display: none;
+}
+
+.products {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.products .container {
+  justify-content: space-between;
+}
+
+.item {
+  width: 30%;
+}
+
+.pic {
+  border: 4px solid black;
+  height: 9rem;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pic img {
+  max-width: 8em;
+}
+
+.description {
+  background-color: black;
+  text-align: center;
+  font-family: Helvetica;
+  padding: 0.5rem 0;
+}
+
+.info {
+  margin-bottom: 4rem;
+}
+
+.info .container {
+  justify-content: space-between;
+}
+
+.box {
+  width: 35%;
+  font-family: Helvetica;
+}
+
+.head {
+  background-color: black;
+  padding: 1rem 2rem;
+  margin-bottom: 0.25em;
+}
+
+.box span {
+  color: black;
+}
+
+footer {
+  background-color: black;
+}
+
+footer .container {
+  margin: 0 auto;
+  padding: 5rem 0;
+  font-family: Helvetica;
+}
+
+@media only screen and (max-width: 1024px) {
+  nav span {
+    display: none;
+  }
+
+  span#menu {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .glasses {
+    display: none;
+  }
+
+  .item {
+    width: 47%;
+  }
+
+  .products .container {
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .banner {
+    height: 15rem;
+  }
+
+  .headline {
+    top: 10rem;
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+
+  .headline p {
+    font-family: Helvetica;
+    font-size: 0.77rem;
+    font-weight: bold;
+  }
+
+  .headline h1 {
+    font-family: Helvetica;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .watch {
+    display: none;
+  }
+
+  .item {
+    width: 90%;
+  }
+
+  .products .container {
+    justify-content: center;
+  }
+
+  .info .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    width: 90%;
+  }
+
+  .location {
+    margin-bottom: 0.5rem;
+  }
+
+  footer .container {
+    justify-content: center;
+  }
+}
